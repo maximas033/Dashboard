@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DashBoard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <!-- LINK TO JS KURSOR LIBRARY-->
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <!-- Greeting -->
+    <section id="TopDashboardInformation">
+      <div>
+        <h1 id="GreetingMessage"></h1>
+      </div>
+      <div>
+        <h1 id="TimeToDisplay"></h1>
+        <h5 id="DateToDisplay"></h5>
+      </div>
+    </section>
+
+    <!-- Section BOTTOM CENTER -->
+    <section id="togather1">
+      <!-- WEATHER -->
+      <section id="WeatherSection">
+        <div id="top">
+          <p id="cityName"></p>
+          <p id="currentWeather"></p>
+        </div>
+        <div id="center">
+          <p id="currentTemp"></p>
+        </div>
+        <div id="bottom">
+          <p id="currentHumidity"></p>
+          <p id="windSpeed"></p>
+          <p id="TodayHighLow"></p>
+        </div>
+      </section>
+
+      <!-- GOOGLE TASKS -->
+      <section id="TasksSection">
+        <div id="topTasks">
+          <p id="TaskHeading">Tasks</p>
+        </div>
+        <div id="centerTasks"></div>
+      </section>
+
+      <!-- NEWS -->
+      <section id="NewsSection">
+        <div id="topNews">
+          <p id="newsHeader"></p>
+        </div>
+        <div id="centerNews">
+          <p id="currentNews"></p>
+          <a id="currentNewsLink" href="" _blank>
+            <!-- <p id="currentNewsLink"></p> -->
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <div id="invisibleSquares"></div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JAVASCRIPT FILES-->
+    <script src="JAVASCRIPT/index.js"></script>
+    <script src="JAVASCRIPT/TASK/FIREBASECONFIGurE.js"></script>
+    <script src="JAVASCRIPT/DetectTimeGreeting.js"></script>
+    <script src="JAVASCRIPT/ChangeBackground.js"></script>
+    <script src="JAVASCRIPT/Weather/JavaScriptWeather.js"></script>
+    <script src="JAVASCRIPT/NEWS/JavaScriptNews.js"></script>
+    <script src="JAVASCRIPT/TASK/FetchTasks.js"></script>
+    <script>
+      var square = document.getElementById("invisibleSquares");
+      // onclick go to Tasks.html
+      square.addEventListener("click", function (e) {
+        window.location.href = "AddTasks.html";
+      });
+    </script>
+  </body>
+</html>

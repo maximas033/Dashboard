@@ -1,0 +1,48 @@
+body {
+  user-select: none;
+}
+
+#AddingTask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+#AddingTask h1 {
+  margin-bottom: 2%;
+}
+
+#inputsWithButton {
+  display: flex;
+  flex-direction: column;
+}
+
+#AddingTask input {
+  width: 35%;
+  margin: 2.5% auto;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+#AddingTask button {
+  width: 20%;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+#square2 {
+  /* clear */
+  background-color: transparent;
+  height: 5%;
+  width: 5%;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
