@@ -1,5 +1,6 @@
 function AddingTasks() {
   var TaskInput = document.getElementById("TaksToDo").value;
+  var currentDate = new Date().toLocaleString();
   var task = {
     Task: TaskInput,
   };

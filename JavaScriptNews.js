@@ -6,6 +6,12 @@ function GetNews() {
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
+      if (json.articles.length === 0) {
+        console.log("No news found");
+        var NewsHeader = document.getElementById("newsHeader");
+        NewsHeader.innerHTML = "No news found";
+        return;
+      }
       //display the news Data inside newsHeader
       var NewsHeader = document.getElementById("newsHeader");
       // display top 1st news header inside NewsHeader
