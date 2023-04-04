@@ -1,15 +1,14 @@
-// if its latter then 6pm change the color of the bacgkround to gray
 function ChangeTheBackground() {
-  // get the current time
   var now = new Date();
-  // if the time is between 6pm and 6am change the background to grey
-  if (now.getHours() >= 6 && now.getHours() <= 6) {
+  if (now.getHours() >= 18 || now.getHours() < 6) {
     document.body.style.backgroundColor = "#6d6d6d";
     document.body.style.color = "#e6e6e6";
+    document.body.style.opacity = "0.5";
   } else {
-    document.body.style.backgroundColor = "#ffff";
+    document.body.style.backgroundColor = "#1e2d47";
+    document.body.style.color = "#E8E9EB";
   }
 }
 
-window.onload = ChangeTheBackground();
-setInterval(ChangeTheBackground, 1000);
+window.onload = ChangeTheBackground;
+setInterval(ChangeTheBackground, 100);

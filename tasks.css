@@ -1,5 +1,7 @@
 body {
   user-select: none;
+  background-color: #1e2d47;
+  color: #e8e9eb;
 }
 
 #AddingTask {
