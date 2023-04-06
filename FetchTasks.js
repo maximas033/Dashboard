@@ -14,11 +14,6 @@ function displayTasks() {
         li.appendChild(taskText);
         li.style.borderLeft = "none";
         centerTasks.appendChild(li);
-        // get current time
-        var date = new Date();
-        var currentTime = date.getHours() + ":" + date.getMinutes();
-        document.getElementById("tasksDone").innerHTML =
-          "All tasks complete " + currentTime;
       } else {
         snapshot.forEach(function (childSnapshot) {
           var task = childSnapshot.val();
@@ -32,7 +27,6 @@ function displayTasks() {
           // small
           button.style.fontSize = "0.5em";
           button.style.borderRadius = "4px";
-          button.style.border = "1px solid grey";
           button.appendChild(buttonText);
           button.addEventListener("click", function () {
             firebase
@@ -44,10 +38,6 @@ function displayTasks() {
           li.appendChild(button);
 
           centerTasks.appendChild(li);
-          var date = new Date();
-          var currentTime = date.getHours() + ":" + date.getMinutes();
-          document.getElementById("tasksDone").innerHTML =
-            "Task found to be completed " + currentTime;
         });
       }
     });

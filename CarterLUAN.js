@@ -1,7 +1,7 @@
 function TalkToLuan(text) {
   const data = {
     text: text,
-    key: "862c1b49-2840-414d-8d0f-e259d5389536",
+    key: "79339706-c7de-4a2c-a704-3023fb98778d",
     playerId: "LUAN_1",
   };
 
