@@ -34,6 +34,9 @@ function GettingCurrentWeather() {
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
+        document.getElementById("WeatherSection").style.animation = "fadeIn";
+        document.getElementById("WeatherSection").style.animationDuration =
+          "3s";
         document.getElementById("cityName").innerHTML = json.name;
         document.getElementById("currentWeather").innerHTML =
           json.weather[0].description.toUpperCase();

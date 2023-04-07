@@ -291,6 +291,38 @@ a {
   left: 1%;
 }
 
+#ButomButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: none;
+  margin: none;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+#allButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: none;
+  width: 95%;
+  margin: 2.5% auto;
+}
+
+#allButtons button {
+  margin: none;
+  padding: none;
+  border-radius: none;
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    50 50;
+  border-width: 15px;
+  transition: 0.5s;
+  background-color: rgba(1, 90, 153, 0.503);
+  color: white;
+  font-weight: lighter;
+}
+
 /* media queries for phones */
 @media screen and (max-width: 767px) {
   /* display flex, flex disrection column */
@@ -341,6 +373,16 @@ a {
   #EmergencyButtonSection {
     width: 100%;
     margin-bottom: 2%;
+  }
+
+  #ButomButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: none;
+    margin: none;
+    animation-name: fadeIn;
+    animation-duration: 3s;
   }
 }
 

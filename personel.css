@@ -1,0 +1,19 @@
+#PersonelPeople {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#PersonelPeople button {
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    60 60;
+  border-width: 8px;
+  transition: 0.5s;
+  background-color: rgba(1, 90, 153, 0.503);
+  color: white;
+  font-weight: lighter;
+  padding: none;
+  margin: 2% auto;
+}
