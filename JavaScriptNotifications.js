@@ -25,4 +25,4 @@ function NOTIFICATION() {
   });
 }
 
-window.onload = NOTIFICATION;
+window.onload = NOTIFICATION();
