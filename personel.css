@@ -17,3 +17,37 @@
   padding: none;
   margin: 2% auto;
 }
+
+#PersonelPeople img {
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+
+#BackButton {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  /* place it at the bottom of the page */
+  bottom: 0;
+  margin-top: 5%;
+}
+
+#GOBackToIndex {
+  text-align: center;
+  -webkit-clip-path: polygon(12% 0, 100% 0, 100% 67%, 84% 100%, 0 100%, 0 35%);
+  clip-path: polygon(12% 0, 100% 0, 100% 67%, 88% 100%, 0 100%, 0 35%);
+  background: rgb(176, 1, 1);
+  color: white;
+  font-weight: lighter;
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    40 40;
+  border-width: 13px;
+  font-size: 15px;
+}
+
+/* media querries for iapd*/
+@media (min-width: 768px) {
+  #PersonelPeople button {
+    font-size: 1.5rem;
+  }
+}

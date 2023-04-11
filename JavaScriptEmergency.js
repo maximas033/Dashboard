@@ -1,6 +1,6 @@
 function EmergencyCall() {
   const accountSid = "ACecee8726512172bcb92b231423a23939";
-  const authToken = "853c2e95465f490d497fe41729024b14";
+  const authToken = "a0c6b911200b19230b83e94f9c1445ff";
   const from = "+13395006765";
   const to = "+12533101421";
 

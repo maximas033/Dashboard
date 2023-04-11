@@ -16,6 +16,9 @@ function displayTasks() {
         centerTasks.appendChild(li);
       } else {
         snapshot.forEach(function (childSnapshot) {
+          document.getElementById("TasksSection").style.animation = "fadeIn";
+          document.getElementById("TasksSection").style.animationDuration =
+            "3s";
           var task = childSnapshot.val();
           var taskKey = childSnapshot.key;
 
